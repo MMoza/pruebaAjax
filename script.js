@@ -1,18 +1,26 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $.ajax({
-        url: "randomUserApi.php",
-        dataType: "json",
-        success: function(data) {
-            var users = data.results;
-            var table = $("#users tbody");
-            $.each(users, function(index, user) {
-                var name = user.name.first + " " + user.name.last;
-                var email = user.email;
-                var phone = user.phone;
-                var city = user.location.city;
-                var row = $("<tr><td>" + name + "</td><td>" + email + "</td><td>" + phone + "</td><td>" + city + "</td></tr>");
-                table.append(row);
+        url: 'controller.php',
+        type: 'GET',
+        dataType: 'json',
+        success: function (response) {
+            console.log(response);
+            $('#users tbody').empty();
+
+            $.each(response, function (index, user) {
+
+                var row = '<tr>' +
+                    '<td>' + user.name + '</td>' +
+                    '<td>' + user.email + '</td>' +
+                    '<td>' + user.phone + '</td>' +
+                    '<td>' + user.city + '</td>' +
+                    '</tr>';
+
+                $('#users tbody').append(row);
             });
+        },
+        error: function () {
+            alert('Error al cargar los usuarios');
         }
     });
 });

@@ -1,6 +1,6 @@
 # 🧑‍💻 Prueba Técnica - Llamada a la API de RandomUser.me
 
-En este desafío, se evaluará tu capacidad para trabajar con programación orientada a objetos, peticiones HTTP y manipulación de datos usando PHP y JavaScript.
+Este proyecto representa la **primera prueba técnica** que tuve que realizar para mi primer trabajo como desarrollador web. Fue una excelente oportunidad para demostrar mis habilidades en la creación de aplicaciones web utilizando PHP y JavaScript, así como para aplicar buenas prácticas de programación orientada a objetos.
 
 ## 📋 Objetivos
 
@@ -24,5 +24,5 @@ La prueba consiste en hacer una llamada a la API de [RandomUser.me](https://rand
 
 Crea una clase en PHP que realice la petición a la API de RandomUser.me usando cURL. La clase debería devolver los datos en formato JSON.
 
+> **Nota**: Esta es la primera vez que implemento una prueba técnica como parte de un proceso de selección para un puesto de desarrollador, y me ha permitido profundizar en el uso de PHP y cURL para realizar solicitudes a APIs de manera eficiente. La experiencia ha sido muy enriquecedora, ya que he tenido la oportunidad de mejorar mis habilidades y aplicar los conocimientos adquiridos.
 
-}
